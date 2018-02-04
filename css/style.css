@@ -1,2 +1,127 @@
 body {
-  font-family: "Calibri"; }
+  font-family: "Calibri";
+  color: #000; }
+
+/*======================= Global Code ========================*/
+.no-padding {
+  padding: 0; }
+
+/*======================= Header ========================*/
+/*======================= Header Top ========================*/
+.header-top {
+  background: #606060; }
+  .header-top .container {
+    background: url(../images/header-bg.png) no-repeat right; }
+  .header-top .header-to-right {
+    margin-top: 95px; }
+  .header-top .social {
+    text-align: right;
+    margin-bottom: 10px; }
+    .header-top .social a {
+      display: inline-block;
+      color: #fff;
+      font-size: 20px;
+      margin-left: 35px; }
+  .header-top .search {
+    width: 223px;
+    background: #fff;
+    border: 5px solid #da4138;
+    float: right; }
+    .header-top .search input {
+      padding: 5px; }
+    .header-top .search input[type=text] {
+      background: none;
+      border: none;
+      width: calc(100% - 35px);
+      float: left; }
+    .header-top .search input[type=submit] {
+      background: none;
+      border: none;
+      width: 35px;
+      float: left;
+      font-family: 'FontAwesome'; }
+
+.logo {
+  display: inline-block;
+  padding: 45px 0 25px; }
+
+/*======================= Menu ========================*/
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0; }
+
+.main-menu {
+  background: #283b91; }
+  .main-menu .navbar-default .navbar-nav > li a {
+    color: #fff;
+    font-size: 18px;
+    padding-right: 40px; }
+
+.sceond-menu .navbar-default .navbar-nav > li a {
+  color: #433d3d;
+  font-size: 14px;
+  padding-right: 30px; }
+
+main {
+  background: #e9ebee;
+  min-height: 500px; }
+
+.third-menu {
+  padding-top: 1px; }
+  .third-menu .navbar-default {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#dcdcdc));
+    background: linear-gradient(#f4f4f4, #dcdcdc);
+    border-color: #fff;
+    border-radius: 0;
+    padding: 15px; }
+  .third-menu .navbar-nav {
+    margin-top: 5px; }
+  .third-menu .navbar-nav > li {
+    margin: 0 15px; }
+  .third-menu .navbar-nav > li > a {
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    position: relative; }
+    .third-menu .navbar-nav > li > a:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5px;
+      bottom: -8px;
+      left: 0;
+      background: #e83f35;
+      opacity: 0; }
+    .third-menu .navbar-nav > li > a:hover:after {
+      opacity: 1; }
+  .third-menu .navbar-nav > li.curent-menu > a:after {
+    opacity: 1; }
+  .third-menu .flags {
+    width: 374px; }
+  .third-menu .brazil {
+    float: left;
+    width: 50%; }
+    .third-menu .brazil img {
+      float: left;
+      margin-right: 10px; }
+    .third-menu .brazil p {
+      margin: 0;
+      font-size: 24px; }
+  .third-menu .year {
+    float: left;
+    width: 50%;
+    margin-top: 5px; }
+    .third-menu .year select {
+      border: none;
+      background: transparent;
+      padding: 2px 35px 0 5px;
+      font-size: 16px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: url(../images/arrow.png) right no-repeat #fff;
+      outline: none;
+      color: #000;
+      color: transparent;
+      text-shadow: 0 0 0 #000; }
