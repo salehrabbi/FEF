@@ -520,3 +520,10 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+
+.article {
+  background: #fff;
+  padding: 15px;
+  color: #5a5456;
+  border-radius: 5px;
+  margin-bottom: 30px; }
