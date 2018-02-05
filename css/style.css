@@ -176,6 +176,10 @@ main {
   .main-content .center-div {
     float: right;
     padding: 0 10px; }
+    .main-content .center-div > div {
+      margin-bottom: 25px;
+      overflow: hidden;
+      border-radius: 5px; }
     .main-content .center-div .players {
       background: #fff;
       overflow: hidden;
@@ -224,6 +228,67 @@ main {
           color: #fefefe; }
       .main-content .center-div .tabs-tittle .tab-content {
         clear: both; }
+    .main-content .center-div .point-table .tabs-tittle .head {
+      width: 20%; }
+    .main-content .center-div .point-table .tabs-tittle .nav {
+      width: 80%; }
+    .main-content .center-div .point-table .table {
+      table-layout: fixed;
+      word-wrap: break-word; }
+      .main-content .center-div .point-table .table th,
+      .main-content .center-div .point-table .table td {
+        padding: 5px 0;
+        text-align: center; }
+      .main-content .center-div .point-table .table th {
+        background: #606060;
+        color: #fff;
+        font-weight: 400; }
+        .main-content .center-div .point-table .table th:nth-child(2) {
+          text-align: left;
+          padding: 5px 20px; }
+      .main-content .center-div .point-table .table td:nth-child(11) {
+        border-left: 1px solid #acacac;
+        border-right: 1px solid #acacac; }
+      .main-content .center-div .point-table .table td:nth-child(1) {
+        font-weight: 700; }
+      .main-content .center-div .point-table .table td:nth-child(2) {
+        border-left: 1px solid #acacac;
+        border-right: 1px solid #acacac;
+        text-align: left;
+        padding: 5px 8px;
+        background: #efefef; }
+        .main-content .center-div .point-table .table td:nth-child(2):before {
+          font-size: 16px;
+          line-height: 1;
+          font-weight: 700;
+          margin-right: 6px;
+          font-family: 'FontAwesome'; }
+      .main-content .center-div .point-table .table td span {
+        text-transform: uppercase;
+        color: #fff;
+        background: #e85555;
+        border-radius: 2px;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        margin: 0 1px; }
+      .main-content .center-div .point-table .table td .win {
+        background: #33a865; }
+      .main-content .center-div .point-table .table td .lose {
+        background: #e85555; }
+      .main-content .center-div .point-table .table td .draw {
+        background: #e99e5a; }
+      .main-content .center-div .point-table .table td .h2h {
+        background: #bcbcbc; }
+      .main-content .center-div .point-table .table .up:before {
+        content: "\f106";
+        color: #0a8d41; }
+      .main-content .center-div .point-table .table .down:before {
+        content: "\f107";
+        color: #c93535; }
+      .main-content .center-div .point-table .table tr:nth-child(even) td:nth-child(2) {
+        background: #e0e0e0; }
   .main-content .right-div {
     float: right;
     padding: 0 10px; }
@@ -269,6 +334,10 @@ main {
   .main-content .left-div {
     padding: 0 10px;
     padding: 0 10px; }
+    .main-content .left-div > div {
+      margin-bottom: 25px;
+      overflow: hidden;
+      border-radius: 5px; }
     .main-content .left-div .left-div-inner {
       background: #fff;
       border-radius: 5px; }

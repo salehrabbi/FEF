@@ -21,7 +21,7 @@ body {
         background: url(../images/header-bg.png) no-repeat right;
         background-position-x: 86%;
         position: relative;
-        &:after{
+        &:after {
             content: "";
             background: url(../images/fox.png);
             position: absolute;
@@ -230,6 +230,11 @@ main {
     .center-div {
         float: right;
         padding: 0 10px;
+        > div {
+            margin-bottom: 25px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
         .players {
             background: #fff;
             overflow: hidden;
@@ -239,25 +244,25 @@ main {
                 border: none;
                 padding: 8px 15px;
             }
-            thead{
-                th{
+            thead {
+                th {
                     background: #f4f5f6;
                     font-size: 14px;
                     color: #433d3d;
                     margin-bottom: 10px;
-                    img{
+                    img {
                         margin-right: 10px;
                         vertical-align: top;
                     }
                 }
             }
-            tbody{
-                tr{
-                    td{
+            tbody {
+                tr {
+                    td {
                         color: #433d3d;
                         font-size: 14px;
                     }
-                    &:nth-child(even){
+                    &:nth-child(even) {
                         background: #f2f2f2;
                     }
                 }
@@ -305,7 +310,107 @@ main {
             }
 
         }
+        .point-table {
+            .tabs-tittle {
+                .head {
+                    width: 20%;
+                }
+                .nav {
+                    width: 80%;
+                }
+            }
+            .table {
+                table-layout: fixed;
+                word-wrap: break-word;
+                th,
+                td {
+                    padding: 5px 0;
+                    text-align: center;
+                }
+                th {
+                    background: #606060;
+                    color: #fff;
+                    font-weight: 400;
+                    &:nth-child(2) {
+                        text-align: left;
+                        padding: 5px 20px;
+                    }
+
+                }
+                td {
+                    &:nth-child(11){
+                        border-left: 1px solid #acacac;
+                        border-right: 1px solid #acacac;
+                    }
+                    &:nth-child(1){
+                        font-weight: 700;
+                    }
+                    
+                    &:nth-child(2) {
+                        border-left: 1px solid #acacac;
+                        border-right: 1px solid #acacac;
+                        text-align: left;
+                        padding: 5px 8px;
+                        background: #efefef;
+                        &:before {
+                            font-size: 16px;
+                            line-height: 1;
+                            font-weight: 700;
+                            margin-right: 6px;
+                            font-family: 'FontAwesome';
+                        }
+                    }
+                    span {
+                        text-transform: uppercase;
+                        color: #fff;
+                        background: #e85555;
+                        border-radius: 2px;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        margin: 0 1px;
+                    }
+                    .win{
+                        background: #33a865;
+                    }
+                    .lose{
+                        background: #e85555;
+                    }
+                    .draw{
+                        background: #e99e5a;
+                    }
+                    .h2h{
+                        background: #bcbcbc;
+                    }
+
+                }
+
+                .up {
+                    &:before {
+                        content: "\f106";
+                        color: #0a8d41;
+                    }
+                }
+                .down {
+                    &:before {
+                        content: "\f107";
+                        color: #c93535;
+                    }
+                }
+                tr {
+                    &:nth-child(even) {
+                        td {
+                            &:nth-child(2) {
+                                background: #e0e0e0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
     /*======================= Right Sidebar ========================*/
     .right-div {
         float: right;
@@ -370,6 +475,11 @@ main {
     .left-div {
         padding: 0 10px;
         padding: 0 10px;
+        > div {
+            margin-bottom: 25px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
         .left-div-inner {
             background: #fff;
             border-radius: 5px;
@@ -412,31 +522,33 @@ main {
         text-transform: uppercase;
     }
 }
+
 /*======================= Main Footer ========================*/
-.main-footer{
-    background: #484747;    
+
+.main-footer {
+    background: #484747;
     border-top: 25px solid #e83f35;
-    .container{
+    .container {
         padding-top: 50px;
         padding-bottom: 40px;
-        background:  url(../images/footer-bg.png) no-repeat right #484747;
+        background: url(../images/footer-bg.png) no-repeat right #484747;
     }
-    h3{
+    h3 {
         color: #fff;
         margin: 0;
         font-size: 14px;
         margin-bottom: 5px;
     }
-    ul{
+    ul {
         list-style: none;
         padding: 0;
         margin: 0;
-        a{
+        a {
             color: #b3b3b3;
             line-height: 1.74;
         }
     }
-    .copy{
+    .copy {
         text-transform: uppercase;
         color: #b3b3b3;
         text-align: center;
