@@ -1,0 +1,175 @@
+@media (min-width:576px) {
+    .point-table,
+    .matches {
+        .table {
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .point-table .table .last-match {
+        width: 27%;
+    }
+    .point-table .table .team {
+        width: 24%;
+    }
+}
+
+@media (max-width:1199px) {
+    .third-menu .flags {
+        width: 223px;
+    }
+    .third-menu .brazil {
+        width: 63%;
+    }
+    .third-menu .year {
+        width: auto;
+    }
+}
+
+@media (max-width:991px) {
+    .main-content .main-centent-row {
+        .left-div {
+            order: 2;
+            width: 30%;
+        }
+        .center-div {
+            order: 1;
+        }
+        .right-div {
+            order: 3;
+            width: 70%;
+        }
+    }
+    .footer-row {
+        > div {
+            margin-bottom: 30px;
+        }
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .header-top {
+        .container {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .players-2 tbody tr td {
+        &:nth-child(1),
+        &:nth-child(2) {
+            text-align: left;
+            padding-left: 20px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .table-responsive {
+        margin-bottom: 0;
+    }
+    .logo {
+        text-align: center;
+        display: block;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .header-top .header-to-right {
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    .header-top .container {
+        background-image: none;
+    }
+    .header-top .social {
+        text-align: left;
+        margin-bottom: 0;
+        margin-top: 8px;
+    }
+    .header-top .search {
+        width: 100%;
+    }
+    .main-menu .navbar-default .navbar-nav > li:first-child a {
+        padding-left: 15px;
+    }
+    .third-menu .navbar-nav > li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .third-menu .navbar-nav > li > a::after {
+        height: 2px;
+        bottom: -5px;
+    }
+    .third-menu .navbar-default .navbar-toggle {
+        border-color: #000;
+    }
+    .main-menu .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .third-menu .navbar-default {
+        padding: 0 15px;
+    }
+    .third-menu .flags {
+        margin-top: 7px;
+    }
+    .sceond-menu li a {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width:575px) {
+    .main-content .main-centent-row {
+        margin: 0 -15px;
+    }
+    .footer-row > div {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .header-top .social {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .point-table .table th,
+    .point-table .table td {
+        padding: 5px 8px;
+    }
+    .main-content .main-centent-row .right-div {
+        order: 2;
+        width: 100%;
+    }
+    .main-content .main-centent-row .left-div {
+        order: 3;
+        width: 100%;
+    }
+    .point-table .tabs-tittle .nav {
+        width: 100%;
+        padding: 15px 10px;
+        margin: 0;
+        li {
+            margin-bottom: 2px;
+        }
+    }
+    .point-table .tabs-tittle .head h3 {
+        padding-bottom: 0;
+    }
+    .tabs-tittle .head {
+        width: 35%;
+    }
+    .tabs-tittle .nav {
+        width: 65%;
+    }
+    .sceond-menu li a {
+	padding: 5px 0;
+}
+}
+
+@media (max-width:450px) {
+    .logo {
+        max-width: 160px;
+    }
+    
+}

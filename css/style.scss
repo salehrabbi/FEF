@@ -6,7 +6,9 @@ body {
 }
 
 /*======================= Global Code ========================*/
-
+.img-responsive{
+    display: initial;
+}
 .no-padding {
     padding: 0;
 }
@@ -23,7 +25,7 @@ body {
         position: relative;
         &:after {
             content: "";
-            background: url(../images/fox.png);
+            background: url(../images/fox.png) no-repeat;
             position: absolute;
             right: 0;
             top: 25px;
@@ -217,6 +219,17 @@ main {
     margin-top: 15px;
     .main-centent-row {
         margin: 0 -25px;
+        display: flex;
+        flex-flow: row wrap;
+        .left-div{
+            order: 1;
+        }
+        .center-div{
+            order: 2;
+        }
+        .right-div{
+            order: 3;
+        }
     }
     .head {
         h3 {
@@ -239,7 +252,7 @@ main {
 /*======================= Start Center Content ========================*/
 
 .center-div {
-    float: right;
+//    float: right;
     padding: 0 10px;
     > div {
         margin-bottom: 25px;
@@ -353,8 +366,6 @@ main {
         }
     }
     .table {
-        table-layout: fixed;
-        word-wrap: break-word;
         th,
         td {
             padding: 5px 0;
@@ -369,6 +380,18 @@ main {
                 padding: 5px 20px;
             }
 
+        }
+        .number{
+            width: 6%;
+        }
+        .team{
+            width: 25%;
+        }
+        .last-match{
+            width: 23%;
+        }
+        .h2h-head{
+            width: 7%;
         }
         td {
             &:nth-child(11) {
@@ -463,10 +486,7 @@ main {
             }
         }
     }
-    .table {
-        table-layout: fixed;
-        word-wrap: break-word;
-    }
+
     tbody tr {
         text-align: left;
         td {
@@ -516,7 +536,7 @@ main {
 /*======================= Start Right Sidebar ========================*/
 
 .right-div {
-    float: right;
+//    float: right;
     padding: 0 10px;
     > div {
         margin-bottom: 25px;
@@ -560,6 +580,7 @@ main {
             &:first-child {
                 background: #efefef;
                 text-align: center;
+                font-weight: 700;
             }
         }
     }
@@ -609,7 +630,6 @@ main {
 /*======================= Start Left Sidebar ========================*/
 
 .left-div {
-    padding: 0 10px;
     padding: 0 10px;
     > div {
         margin-bottom: 25px;
@@ -694,5 +714,9 @@ main {
         color: #b3b3b3;
         text-align: center;
         padding-top: 60px;
+    }
+    .footer-row{
+        display: flex;
+        flex-flow: row wrap;
     }
 }

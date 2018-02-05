@@ -4,6 +4,9 @@ body {
   font-size: 14px; }
 
 /*======================= Global Code ========================*/
+.img-responsive {
+  display: initial; }
+
 .no-padding {
   padding: 0; }
 
@@ -17,7 +20,7 @@ body {
     position: relative; }
     .header-top .container:after {
       content: "";
-      background: url(../images/fox.png);
+      background: url(../images/fox.png) no-repeat;
       position: absolute;
       right: 0;
       top: 25px;
@@ -159,7 +162,26 @@ main {
 .main-content {
   margin-top: 15px; }
   .main-content .main-centent-row {
-    margin: 0 -25px; }
+    margin: 0 -25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .main-content .main-centent-row .left-div {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .main-content .main-centent-row .center-div {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+    .main-content .main-centent-row .right-div {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; }
   .main-content .head h3 {
     margin: 0;
     background: #fff;
@@ -173,7 +195,6 @@ main {
 
 /*======================= Start Center Content ========================*/
 .center-div {
-  float: right;
   padding: 0 10px; }
   .center-div > div {
     margin-bottom: 25px;
@@ -248,63 +269,68 @@ main {
   width: 20%; }
 .point-table .tabs-tittle .nav {
   width: 80%; }
-.point-table .table {
-  table-layout: fixed;
-  word-wrap: break-word; }
-  .point-table .table th,
-  .point-table .table td {
-    padding: 5px 0;
-    text-align: center; }
-  .point-table .table th {
-    background: #606060;
-    color: #fff;
-    font-weight: 400; }
-    .point-table .table th:nth-child(2) {
-      text-align: left;
-      padding: 5px 20px; }
-  .point-table .table td:nth-child(11) {
-    border-left: 1px solid #acacac;
-    border-right: 1px solid #acacac; }
-  .point-table .table td:nth-child(1) {
-    font-weight: 700; }
-  .point-table .table td:nth-child(2) {
-    border-left: 1px solid #acacac;
-    border-right: 1px solid #acacac;
+.point-table .table th,
+.point-table .table td {
+  padding: 5px 0;
+  text-align: center; }
+.point-table .table th {
+  background: #606060;
+  color: #fff;
+  font-weight: 400; }
+  .point-table .table th:nth-child(2) {
     text-align: left;
-    padding: 5px 8px;
-    background: #efefef; }
-    .point-table .table td:nth-child(2):before {
-      font-size: 16px;
-      line-height: 1;
-      font-weight: 700;
-      margin-right: 6px;
-      font-family: 'Font Awesome 5 Free'; }
-  .point-table .table td span {
-    text-transform: uppercase;
-    color: #fff;
-    background: #e85555;
-    border-radius: 2px;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    margin: 0 1px; }
-  .point-table .table td .win {
-    background: #33a865; }
-  .point-table .table td .lose {
-    background: #e85555; }
-  .point-table .table td .draw {
-    background: #e99e5a; }
-  .point-table .table td .h2h {
-    background: #bcbcbc; }
-  .point-table .table .up:before {
-    content: "\f106";
-    color: #0a8d41; }
-  .point-table .table .down:before {
-    content: "\f107";
-    color: #c93535; }
-  .point-table .table tr:nth-child(even) td:nth-child(2) {
-    background: #e0e0e0; }
+    padding: 5px 20px; }
+.point-table .table .number {
+  width: 6%; }
+.point-table .table .team {
+  width: 25%; }
+.point-table .table .last-match {
+  width: 23%; }
+.point-table .table .h2h-head {
+  width: 7%; }
+.point-table .table td:nth-child(11) {
+  border-left: 1px solid #acacac;
+  border-right: 1px solid #acacac; }
+.point-table .table td:nth-child(1) {
+  font-weight: 700; }
+.point-table .table td:nth-child(2) {
+  border-left: 1px solid #acacac;
+  border-right: 1px solid #acacac;
+  text-align: left;
+  padding: 5px 8px;
+  background: #efefef; }
+  .point-table .table td:nth-child(2):before {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    margin-right: 6px;
+    font-family: 'Font Awesome 5 Free'; }
+.point-table .table td span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #e85555;
+  border-radius: 2px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin: 0 1px; }
+.point-table .table td .win {
+  background: #33a865; }
+.point-table .table td .lose {
+  background: #e85555; }
+.point-table .table td .draw {
+  background: #e99e5a; }
+.point-table .table td .h2h {
+  background: #bcbcbc; }
+.point-table .table .up:before {
+  content: "\f106";
+  color: #0a8d41; }
+.point-table .table .down:before {
+  content: "\f107";
+  color: #c93535; }
+.point-table .table tr:nth-child(even) td:nth-child(2) {
+  background: #e0e0e0; }
 
 /*======================= Matches Table Section ========================*/
 .matches .date {
@@ -316,9 +342,6 @@ main {
 .matches .tabs-tittle .nav li a {
   font-size: 14px;
   text-transform: uppercase; }
-.matches .table {
-  table-layout: fixed;
-  word-wrap: break-word; }
 .matches tbody tr {
   text-align: left; }
   .matches tbody tr td {
@@ -356,7 +379,6 @@ main {
 /*======================= End Center Content ========================*/
 /*======================= Start Right Sidebar ========================*/
 .right-div {
-  float: right;
   padding: 0 10px; }
   .right-div > div {
     margin-bottom: 25px;
@@ -387,7 +409,8 @@ main {
       text-align: center; }
   .teams tr td:first-child {
     background: #efefef;
-    text-align: center; }
+    text-align: center;
+    font-weight: 700; }
   .teams .nav-tabs > li > a,
   .teams .nav-tabs > li > a:focus,
   .teams .nav-tabs > li > a:hover {
@@ -423,7 +446,6 @@ main {
 /*======================= End Right Sidebar ========================*/
 /*======================= Start Left Sidebar ========================*/
 .left-div {
-  padding: 0 10px;
   padding: 0 10px; }
   .left-div > div {
     margin-bottom: 25px;
@@ -490,3 +512,11 @@ main {
     color: #b3b3b3;
     text-align: center;
     padding-top: 60px; }
+  .main-footer .footer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
