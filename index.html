@@ -12,8 +12,8 @@
     <title>HTML Blank Bootstrap</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -37,15 +37,16 @@
                     <div class="col-md-5 col-md-pull-1 header-to-right">
                         <div class="col-xs-12 no-padding">
                             <div class="social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="col-xs-12 no-padding">
                             <form action="#" class="search clearfix">
                                 <input type="text" placeholder="Search">
-                                <input type="submit" value="&#xf002">
+<!--                                <input type="submit" value="&#xf002">-->
+                                <button type="submit"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -81,25 +82,19 @@
         <div class="sceond-menu">
             <div class="container">
                 <div class="row">
-                    <nav class="navbar navbar-default">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-2" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div id="navbar-2" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="curent-menu"><a href="#">Popular</a></li>
-                                <li><a href="#">Club Domestic (1223)</a></li>
-                                <li><a href="#"> Club International (58)</a></li>
-                                <li><a href="#">National Teams (153)</a></li>
-                            </ul>
-                        </div>
-                        <!--/.nav-collapse -->
-                    </nav>
+                    <div class="col-xs-12">
+                        <nav>
+                            <div>
+                                <ul>
+                                    <li class="curent-menu"><a href="#">Popular</a></li>
+                                    <li><a href="#">Club Domestic (1223)</a></li>
+                                    <li><a href="#"> Club International (58)</a></li>
+                                    <li><a href="#">National Teams (153)</a></li>
+                                </ul>
+                            </div>
+                            <!--/.nav-collapse -->
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -391,6 +386,136 @@
                     </div>
 <!--                    /*======================= Center Content ========================*/-->
                     <div class="col-md-6 center-div">
+                      <div class="players matches">
+                            <div class="tabs-tittle clearfix">
+                                <div class="head">
+                                    <h3>Matches</h3>
+                                </div>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#matches-1">By date</a></li>
+                                    <li><a data-toggle="tab" href="#matches-2">By game week</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div id="matches-1" class="tab-pane fade in active">
+                                    <div class="table-responsive">
+                                       <div class="date">Mon 04/12/17</div>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sport Recife</td>
+                                                    <td>1-2</td>
+                                                    <td>Flamengo</td>
+                                                    <td>
+                                                        <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                        <a href="#"><i class="fas fa-info"></i></a>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="matches-2" class="tab-pane fade">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Team</th>
+                                                    <th>MP</th>
+                                                    <th>D</th>
+                                                    <th>P</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Manchester City</td>
+                                                    <td>25</td>
+                                                    <td>+55</td>
+                                                    <td>68</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Manchester City</td>
+                                                    <td>25</td>
+                                                    <td>+55</td>
+                                                    <td>68</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Manchester City</td>
+                                                    <td>25</td>
+                                                    <td>+55</td>
+                                                    <td>68</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Manchester City</td>
+                                                    <td>25</td>
+                                                    <td>+55</td>
+                                                    <td>68</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Manchester City</td>
+                                                    <td>25</td>
+                                                    <td>+55</td>
+                                                    <td>68</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                        <div class="point-table players">
                             <div class="tabs-tittle clearfix">
                                 <div class="head">

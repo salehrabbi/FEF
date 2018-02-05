@@ -39,19 +39,19 @@ body {
     background: #fff;
     border: 5px solid #da4138;
     float: right; }
-    .header-top .search input {
+    .header-top .search input,
+    .header-top .search button {
       padding: 5px; }
     .header-top .search input[type=text] {
       background: none;
       border: none;
       width: calc(100% - 35px);
       float: left; }
-    .header-top .search input[type=submit] {
+    .header-top .search button[type=submit] {
       background: none;
       border: none;
       width: 35px;
-      float: left;
-      font-family: 'FontAwesome'; }
+      float: left; }
 
 .logo {
   display: inline-block;
@@ -69,13 +69,27 @@ body {
   .main-menu .navbar-default .navbar-nav > li a {
     color: #fff;
     font-size: 18px;
-    padding-right: 40px; }
+    margin-right: 30px; }
+  .main-menu .navbar-default .navbar-nav > li:first-child a {
+    padding-left: 0; }
 
 /*======================= Sceond Menu ========================*/
-.sceond-menu .navbar-default .navbar-nav > li a {
-  color: #433d3d;
-  font-size: 14px;
-  padding-right: 30px; }
+.sceond-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.sceond-menu li {
+  display: inline-block;
+  margin-right: 30px; }
+  .sceond-menu li a {
+    color: #433d3d;
+    font-size: 14px;
+    padding: 20px 15px;
+    display: block; }
+  .sceond-menu li:first-child a {
+    padding-left: 0; }
+  .sceond-menu li:last-child {
+    margin-right: 0; }
 
 main {
   background: #e9ebee;
@@ -141,11 +155,9 @@ main {
       color: transparent;
       text-shadow: 0 0 0 #000; }
 
+/*======================= All  Content ========================*/
 .main-content {
-  margin-top: 15px;
-  /*======================= Center Content ========================*/
-  /*======================= Right Sidebar ========================*/
-  /*======================= Left Sidebar ========================*/ }
+  margin-top: 15px; }
   .main-content .main-centent-row {
     margin: 0 -25px; }
   .main-content .head h3 {
@@ -156,9 +168,229 @@ main {
     color: #e83f35;
     text-transform: uppercase;
     padding: 8px 15px; }
-  .main-content .nav-tabs > li > a,
-  .main-content .nav-tabs > li > a:focus,
-  .main-content .nav-tabs > li > a:hover {
+  .main-content .table {
+    margin-bottom: 0; }
+
+/*======================= Start Center Content ========================*/
+.center-div {
+  float: right;
+  padding: 0 10px; }
+  .center-div > div {
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 5px; }
+
+/*======================= Players Table Scetion ========================*/
+.players {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 5px; }
+  .players td,
+  .players th {
+    border: none;
+    padding: 8px 15px; }
+  .players thead th {
+    background: #f4f5f6;
+    font-size: 14px;
+    color: #433d3d;
+    margin-bottom: 10px;
+    text-align: center; }
+    .players thead th:first-child, .players thead th:nth-child(2) {
+      text-align: left;
+      padding-left: 25px; }
+    .players thead th img {
+      margin-right: 10px;
+      vertical-align: top; }
+  .players tbody tr {
+    text-align: center; }
+    .players tbody tr td {
+      color: #433d3d;
+      font-size: 14px; }
+    .players tbody tr:nth-child(even) {
+      background: #f2f2f2; }
+
+/*======================= Table Tab Style ========================*/
+.tabs-tittle {
+  background: #fff; }
+  .tabs-tittle .head {
+    width: 40%;
+    float: left; }
+    .tabs-tittle .head h3 {
+      border: none; }
+  .tabs-tittle .nav {
+    width: 60%;
+    float: left;
+    background: #fff;
+    border: none;
+    margin-top: 9px; }
+    .tabs-tittle .nav li a {
+      border-radius: 0;
+      border: none;
+      color: #494747;
+      font-weight: 400;
+      font-size: 12px;
+      padding: 2px 5px;
+      margin: 0 2px; }
+      .tabs-tittle .nav li a:hover, .tabs-tittle .nav li a:focus {
+        background: #606060;
+        color: #fefefe;
+        padding: 2px 5px; }
+    .tabs-tittle .nav li.active a {
+      background: #606060;
+      color: #fefefe;
+      border: none;
+      padding: 2px 5px; }
+  .tabs-tittle .tab-content {
+    clear: both; }
+
+/*======================= Poin Table Section ========================*/
+.point-table .tabs-tittle .head {
+  width: 20%; }
+.point-table .tabs-tittle .nav {
+  width: 80%; }
+.point-table .table {
+  table-layout: fixed;
+  word-wrap: break-word; }
+  .point-table .table th,
+  .point-table .table td {
+    padding: 5px 0;
+    text-align: center; }
+  .point-table .table th {
+    background: #606060;
+    color: #fff;
+    font-weight: 400; }
+    .point-table .table th:nth-child(2) {
+      text-align: left;
+      padding: 5px 20px; }
+  .point-table .table td:nth-child(11) {
+    border-left: 1px solid #acacac;
+    border-right: 1px solid #acacac; }
+  .point-table .table td:nth-child(1) {
+    font-weight: 700; }
+  .point-table .table td:nth-child(2) {
+    border-left: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+    text-align: left;
+    padding: 5px 8px;
+    background: #efefef; }
+    .point-table .table td:nth-child(2):before {
+      font-size: 16px;
+      line-height: 1;
+      font-weight: 700;
+      margin-right: 6px;
+      font-family: 'Font Awesome 5 Free'; }
+  .point-table .table td span {
+    text-transform: uppercase;
+    color: #fff;
+    background: #e85555;
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin: 0 1px; }
+  .point-table .table td .win {
+    background: #33a865; }
+  .point-table .table td .lose {
+    background: #e85555; }
+  .point-table .table td .draw {
+    background: #e99e5a; }
+  .point-table .table td .h2h {
+    background: #bcbcbc; }
+  .point-table .table .up:before {
+    content: "\f106";
+    color: #0a8d41; }
+  .point-table .table .down:before {
+    content: "\f107";
+    color: #c93535; }
+  .point-table .table tr:nth-child(even) td:nth-child(2) {
+    background: #e0e0e0; }
+
+/*======================= Matches Table Section ========================*/
+.matches .date {
+  padding: 5px 15px;
+  background: #f4f5f6;
+  color: #433d3d;
+  font-weight: 700;
+  margin-bottom: 15px; }
+.matches .tabs-tittle .nav li a {
+  font-size: 14px;
+  text-transform: uppercase; }
+.matches .table {
+  table-layout: fixed;
+  word-wrap: break-word; }
+.matches tbody tr {
+  text-align: left; }
+  .matches tbody tr td {
+    border-top: transparent;
+    border-bottom: 1px solid #dfdfdf; }
+    .matches tbody tr td a {
+      color: #433d3d;
+      margin: 0 4px; }
+      .matches tbody tr td a .fa-calendar-alt {
+        font-size: 17px; }
+      .matches tbody tr td a .fa-info {
+        height: 20px;
+        width: 19px;
+        text-align: center;
+        line-height: 17px;
+        border: 1px solid #433d3d;
+        border-radius: 50%;
+        font-size: 14px;
+        position: relative;
+        top: -1px; }
+    .matches tbody tr td:nth-child(1) {
+      padding-left: 17px; }
+    .matches tbody tr td:nth-child(2) {
+      background: rgba(91, 91, 91, 0.2);
+      width: 12%;
+      text-align: center;
+      font-weight: 700;
+      border-bottom-color: #c6c6c6; }
+    .matches tbody tr td:nth-child(3) {
+      padding-left: 28px; }
+    .matches tbody tr td:nth-child(4) {
+      text-align: center;
+      width: 15%; }
+
+/*======================= End Center Content ========================*/
+/*======================= Start Right Sidebar ========================*/
+.right-div {
+  float: right;
+  padding: 0 10px; }
+  .right-div > div {
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 5px; }
+
+/*======================= Team Table Section ========================*/
+.teams {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden; }
+  .teams .nav-tabs {
+    background: #f4f5f6; }
+  .teams thead {
+    background: #606060;
+    color: #fff; }
+  .teams th,
+  .teams td {
+    padding: 5px 15px;
+    border: none;
+    font-weight: 300;
+    color: #433d3d; }
+  .teams th {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff; }
+    .teams th:first-child {
+      text-align: center; }
+  .teams tr td:first-child {
+    background: #efefef;
+    text-align: center; }
+  .teams .nav-tabs > li > a,
+  .teams .nav-tabs > li > a:focus,
+  .teams .nav-tabs > li > a:hover {
     color: #433d3d;
     cursor: pointer;
     background-color: transparent;
@@ -167,195 +399,56 @@ main {
     border-radius: 0;
     padding: 5px 15px;
     font-weight: 700; }
-  .main-content .nav-tabs > li > a:focus,
-  .main-content .nav-tabs > li > a:hover,
-  .main-content .nav-tabs > li.active > a {
+  .teams .nav-tabs > li > a:focus,
+  .teams .nav-tabs > li > a:hover,
+  .teams .nav-tabs > li.active > a {
     color: #283b91; }
-  .main-content .table {
-    margin-bottom: 0; }
-  .main-content .center-div {
-    float: right;
-    padding: 0 10px; }
-    .main-content .center-div > div {
-      margin-bottom: 25px;
+
+/*======================= Youtube Video ========================*/
+.videos {
+  background: #fff;
+  padding-bottom: 30px; }
+  .videos iframe {
+    width: 100%;
+    height: 185px; }
+  .videos .content {
+    padding: 15px 15px 0; }
+    .videos .content h4 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+      padding: 10px 0; }
+
+/*======================= End Right Sidebar ========================*/
+/*======================= Start Left Sidebar ========================*/
+.left-div {
+  padding: 0 10px;
+  padding: 0 10px; }
+  .left-div > div {
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 5px; }
+  .left-div .left-div-inner {
+    background: #fff;
+    border-radius: 5px; }
+
+/*======================= List Of team ========================*/
+.league-list {
+  padding: 15px; }
+  .league-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .league-list ul li {
       overflow: hidden;
-      border-radius: 5px; }
-    .main-content .center-div .players {
-      background: #fff;
-      overflow: hidden;
-      border-radius: 5px; }
-      .main-content .center-div .players td,
-      .main-content .center-div .players th {
-        border: none;
-        padding: 8px 15px; }
-      .main-content .center-div .players thead th {
-        background: #f4f5f6;
-        font-size: 14px;
-        color: #433d3d;
-        margin-bottom: 10px; }
-        .main-content .center-div .players thead th img {
-          margin-right: 10px;
-          vertical-align: top; }
-      .main-content .center-div .players tbody tr td {
-        color: #433d3d;
-        font-size: 14px; }
-      .main-content .center-div .players tbody tr:nth-child(even) {
-        background: #f2f2f2; }
-    .main-content .center-div .tabs-tittle {
-      background: #fff; }
-      .main-content .center-div .tabs-tittle .head {
-        width: 40%;
-        float: left; }
-        .main-content .center-div .tabs-tittle .head h3 {
-          border: none; }
-      .main-content .center-div .tabs-tittle .nav {
-        width: 60%;
-        float: left;
-        background: #fff;
-        border: none;
-        margin-top: 9px; }
-        .main-content .center-div .tabs-tittle .nav li a {
-          color: #494747;
-          font-weight: 400;
-          font-size: 12px;
-          padding: 2px 5px;
-          margin: 0 2px; }
-          .main-content .center-div .tabs-tittle .nav li a:hover, .main-content .center-div .tabs-tittle .nav li a:focus {
-            background: #606060;
-            color: #fefefe; }
-        .main-content .center-div .tabs-tittle .nav li.active a {
-          background: #606060;
-          color: #fefefe; }
-      .main-content .center-div .tabs-tittle .tab-content {
-        clear: both; }
-    .main-content .center-div .point-table .tabs-tittle .head {
-      width: 20%; }
-    .main-content .center-div .point-table .tabs-tittle .nav {
-      width: 80%; }
-    .main-content .center-div .point-table .table {
-      table-layout: fixed;
-      word-wrap: break-word; }
-      .main-content .center-div .point-table .table th,
-      .main-content .center-div .point-table .table td {
-        padding: 5px 0;
-        text-align: center; }
-      .main-content .center-div .point-table .table th {
-        background: #606060;
-        color: #fff;
-        font-weight: 400; }
-        .main-content .center-div .point-table .table th:nth-child(2) {
-          text-align: left;
-          padding: 5px 20px; }
-      .main-content .center-div .point-table .table td:nth-child(11) {
-        border-left: 1px solid #acacac;
-        border-right: 1px solid #acacac; }
-      .main-content .center-div .point-table .table td:nth-child(1) {
-        font-weight: 700; }
-      .main-content .center-div .point-table .table td:nth-child(2) {
-        border-left: 1px solid #acacac;
-        border-right: 1px solid #acacac;
-        text-align: left;
-        padding: 5px 8px;
-        background: #efefef; }
-        .main-content .center-div .point-table .table td:nth-child(2):before {
-          font-size: 16px;
-          line-height: 1;
-          font-weight: 700;
-          margin-right: 6px;
-          font-family: 'FontAwesome'; }
-      .main-content .center-div .point-table .table td span {
-        text-transform: uppercase;
-        color: #fff;
-        background: #e85555;
-        border-radius: 2px;
-        display: inline-block;
-        height: 20px;
-        width: 20px;
-        line-height: 20px;
-        margin: 0 1px; }
-      .main-content .center-div .point-table .table td .win {
-        background: #33a865; }
-      .main-content .center-div .point-table .table td .lose {
-        background: #e85555; }
-      .main-content .center-div .point-table .table td .draw {
-        background: #e99e5a; }
-      .main-content .center-div .point-table .table td .h2h {
-        background: #bcbcbc; }
-      .main-content .center-div .point-table .table .up:before {
-        content: "\f106";
-        color: #0a8d41; }
-      .main-content .center-div .point-table .table .down:before {
-        content: "\f107";
-        color: #c93535; }
-      .main-content .center-div .point-table .table tr:nth-child(even) td:nth-child(2) {
-        background: #e0e0e0; }
-  .main-content .right-div {
-    float: right;
-    padding: 0 10px; }
-    .main-content .right-div > div {
-      margin-bottom: 25px;
-      overflow: hidden;
-      border-radius: 5px; }
-    .main-content .right-div .teams {
-      background: #fff;
-      border-radius: 5px;
-      overflow: hidden; }
-      .main-content .right-div .teams .nav-tabs {
-        background: #f4f5f6; }
-      .main-content .right-div .teams thead {
-        background: #606060;
-        color: #fff; }
-      .main-content .right-div .teams th,
-      .main-content .right-div .teams td {
-        padding: 5px 15px;
-        border: none;
+      text-overflow: ellipsis; }
+      .league-list ul li a {
+        font-size: 15px;
         font-weight: 300;
-        color: #433d3d; }
-      .main-content .right-div .teams th {
-        font-size: 14px;
-        font-weight: 400;
-        color: #fff; }
-      .main-content .right-div .teams tr td:first-child {
-        background: #efefef; }
-    .main-content .right-div .videos {
-      background: #fff;
-      padding-bottom: 30px; }
-      .main-content .right-div .videos iframe {
-        width: 100%;
-        height: 185px; }
-      .main-content .right-div .videos .content {
-        padding: 15px 15px 0; }
-        .main-content .right-div .videos .content h4 {
-          text-align: center;
-          font-size: 18px;
-          font-weight: 700;
-          margin: 0;
-          padding: 10px 0; }
-  .main-content .left-div {
-    padding: 0 10px;
-    padding: 0 10px; }
-    .main-content .left-div > div {
-      margin-bottom: 25px;
-      overflow: hidden;
-      border-radius: 5px; }
-    .main-content .left-div .left-div-inner {
-      background: #fff;
-      border-radius: 5px; }
-    .main-content .left-div .league-list {
-      padding: 15px; }
-      .main-content .left-div .league-list ul {
-        list-style: none;
-        padding: 0;
-        margin: 0; }
-        .main-content .left-div .league-list ul li {
-          overflow: hidden;
-          text-overflow: ellipsis; }
-          .main-content .left-div .league-list ul li a {
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 1.6;
-            color: #585454;
-            white-space: nowrap; }
+        line-height: 1.6;
+        color: #585454;
+        white-space: nowrap; }
 
 .flags-small {
   padding: 5px 15px 5px;
@@ -371,6 +464,7 @@ main {
     color: #e83f35;
     text-transform: uppercase; }
 
+/*======================= End Left Sidebar ========================*/
 /*======================= Main Footer ========================*/
 .main-footer {
   background: #484747;
